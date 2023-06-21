@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="topheader">
+            <div class="brand">
+                <i class="iso bi bi-twitter"></i>
+                <input type="search" class="buscar" name="" id="" placeholder="# Explore">
+            </div>
+            <nav class="navbar">
+                <a href="#" class="home active"><i class="bi bi-house-door-fill icon"></i>Home</a>
+                <a href="#"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" class="icon" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2198 28.0387C12.2198 25.8586 13.9871 24.0913 16.1672 24.0913C18.3472 24.0913 20.1145 25.8586 20.1145 28.0387C20.1145 30.2188 18.3472 31.986 16.1672 31.986C13.9871 31.986 12.2198 30.2188 12.2198 28.0387ZM24.0619 16.1966C24.0619 14.0165 25.8292 12.2492 28.0093 12.2492C30.1893 12.2492 31.9566 14.0165 31.9566 16.1966C31.9566 18.3766 30.1893 20.1439 28.0093 20.1439C25.8292 20.1439 24.0619 18.3766 24.0619 16.1966ZM0.377686 16.1966C0.377686 14.0165 2.14498 12.2492 4.32505 12.2492C6.50512 12.2492 8.27242 14.0165 8.27242 16.1966C8.27242 18.3766 6.50512 20.1439 4.32505 20.1439C2.14498 20.1439 0.377686 18.3766 0.377686 16.1966ZM12.2198 4.35447C12.2198 2.1744 13.9871 0.407104 16.1672 0.407104C18.3472 0.407104 20.1145 2.1744 20.1145 4.35447C20.1145 6.53454 18.3472 8.30184 16.1672 8.30184C13.9871 8.30184 12.2198 6.53454 12.2198 4.35447Z"
+                        fill="white" />
+                </svg>
+                </a>
+                <a href="#"><i class="bi bi-envelope-fill icon"></i></a>
+                <a href="#"><i class="bi bi-bell-fill icon"></i><span class="bell-notification">5</span></a>
+            </nav>
+            <div class="user-options">
+                <div class="user">   
+                    <img src="img/avatar.jpg" alt="avatar Jude Ruzardio" class="avatar">
+                    <span class="user-name">Jude Ruzardio
+                    <i class="bi bi-caret-down-fill"></i>
+                    </span>
+                </div>
+                <a href="#" class="options">
+                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none" class="icon" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M23.1394 26.9488C23.1394 24.897 24.8027 23.2336 26.8546 23.2336C28.9064 23.2336 30.5697 24.897 30.5697 26.9488C30.5697 29.0007 28.9064 30.664 26.8546 30.664C24.8027 30.664 23.1394 29.0007 23.1394 26.9488ZM11.9939 26.9488C11.9939 24.897 13.6572 23.2336 15.7091 23.2336C17.7609 23.2336 19.4242 24.897 19.4242 26.9488C19.4242 29.0007 17.7609 30.664 15.7091 30.664C13.6572 30.664 11.9939 29.0007 11.9939 26.9488ZM0.848389 26.9488C0.848389 24.897 2.51173 23.2336 4.56356 23.2336C6.61539 23.2336 8.27873 24.897 8.27873 26.9488C8.27873 29.0007 6.61539 30.664 4.56356 30.664C2.51173 30.664 0.848389 29.0007 0.848389 26.9488ZM23.1394 15.8033C23.1394 13.7515 24.8027 12.0881 26.8546 12.0881C28.9064 12.0881 30.5697 13.7515 30.5697 15.8033C30.5697 17.8551 28.9064 19.5185 26.8546 19.5185C24.8027 19.5185 23.1394 17.8551 23.1394 15.8033ZM11.9939 15.8033C11.9939 13.7515 13.6572 12.0881 15.7091 12.0881C17.7609 12.0881 19.4242 13.7515 19.4242 15.8033C19.4242 17.8551 17.7609 19.5185 15.7091 19.5185C13.6572 19.5185 11.9939 17.8551 11.9939 15.8033ZM0.848389 15.8033C0.848389 13.7515 2.51173 12.0881 4.56356 12.0881C6.61539 12.0881 8.27873 13.7515 8.27873 15.8033C8.27873 17.8551 6.61539 19.5185 4.56356 19.5185C2.51173 19.5185 0.848389 17.8551 0.848389 15.8033ZM23.1394 4.6578C23.1394 2.60596 24.8027 0.942627 26.8546 0.942627C28.9064 0.942627 30.5697 2.60596 30.5697 4.6578C30.5697 6.70963 28.9064 8.37297 26.8546 8.37297C24.8027 8.37297 23.1394 6.70963 23.1394 4.6578ZM11.9939 4.6578C11.9939 2.60596 13.6572 0.942627 15.7091 0.942627C17.7609 0.942627 19.4242 2.60596 19.4242 4.6578C19.4242 6.70963 17.7609 8.37297 15.7091 8.37297C13.6572 8.37297 11.9939 6.70963 11.9939 4.6578ZM0.848389 4.6578C0.848389 2.60596 2.51173 0.942627 4.56356 0.942627C6.61539 0.942627 8.27873 2.60596 8.27873 4.6578C8.27873 6.70963 6.61539 8.37297 4.56356 8.37297C2.51173 8.37297 0.848389 6.70963 0.848389 4.6578Z"
+                        fill="white" />
+                    </svg>
+                </a>
+            </div>
+        </header>
+        <div class="left-col column">
+            <div class="box profile">
+                <div class="profile-details">
+                    <img src="img/avatar.jpg" alt="avatar Jude Ruzardio" class="avatar">
+                    <h2 class="profile-name">Jude Ruzardio</h2>
+                    <a href="#" title="@designerjude" class="profile-link">@designerjude</a>
+                    <p class="profile-bio">Self taught UI/UX Designer | Currently a Product Manager at Google</p>
+                </div>
+                <div class="horizontalSeparator"></div>
+                <div class="follows">
+                    <div class="follows-container">
+                        <span class="numbers-follows">341</span>
+                        <span class="description-follows">Following</span>
+                    </div>
+                    <div class="verticalSeparator"></div>
+                    <div class="follows-container">
+                        <span class="numbers-follows">1,485</span>
+                        <span class="description-follows">Followers</span>
+                    </div>
+                </div>
+                <div class="horizontalSeparator"></div>
+                <a href="#" title="Show Profile" class="show-profile">Show Profile</a>
+            </div>
+            <div class="box people">
+                <h2>People you may know</h2>
+                <div class="peopleList">
+                    <!--
+                    <div class="peopleItem">
+                        <img src="img/avatar.jpg" alt="avatar" class="avatar">
+                        <div class="userCont">
+                            <span class="userName">Milli Smith</span>
+                            <span class="user">@Milli1243</span>
+                        </div>
+                        <button class="followBtn">Follow</button>
+                    </div>
+                    <div class="peopleItem">
+                        <img src="img/avatar.jpg" alt="avatar" class="avatar">
+                        <div class="userCont">
+                            <span class="userName">Milli Smith</span>
+                            <span class="user">@Milli1243</span>
+                        </div>
+                        <button class="followBtn">Follow</button>
+                    </div>
+                    <div class="peopleItem">
+                        <img src="img/avatar.jpg" alt="avatar" class="avatar">
+                        <div class="userCont">
+                            <span class="userName">Milli Smith</span>
+                            <span class="user">@Milli1243</span>
+                        </div>
+                        <button class="followBtn">Follow</button>
+                    </div>
+                    -->
+                </div>
+                <a href="#" class="showMore">Show More</a>
+            </div>
+        </div>
+        <div class="center-col column">
+            <div class="newPost box">
+                <div class="newTweet">
+                    <img src="img/avatar.jpg" alt="avatar Jude Ruzardio" class="avatar">
+                    <input type="text" class="inputNewTweet">
+                    <span class="emojis"></span>
+                </div>
+                <div class="postType">
+                    <button class="btnNewTweet"><img src="img/photo.png" alt="Photo">Photo</button>
+                    <button class="btnNewTweet"><img src="img/video.png" alt="Video">Video</button>
+                    <button class="btnNewTweet"><img src="img/schedule.png" alt="Schedule">Schedule</button>
+                    <button class="btnNewTweet"><img src="img/thread.png" alt="Thread">Thread</button>
+                </div>
+            </div>
+            <article class="post box">
+                <div class="">
+                    <img src="img/avatar.jpg" alt="avatar Jude Ruzardio" class="avatar">
+                    <span class="userName">Lakshay N</span>
+                    <span class="user">@lakshay_co</span>
+                    <span class="timePost">10 minutes ago</span>
+                </div>
+                <div class="metaTweet">
+                    <span>59 likes</span><span>12 Retweets</span><span>17 Comments</span>
+                </div>
+                <div class="postReaction">
+                    <button class="btnReaction"><i class="bi bi-heart"></i>Like</button>
+                    <button class="btnReaction"><i class="bi bi-arrow-left-right"></i>Retweet</button>
+                    <button class="btnReaction"><i class="bi bi-chat-dots"></i>Comment</button>
+                    <button class="btnReaction"><i class="bi bi-upload"></i>Share</button>
+                </div>
+            </article>
+        </div>
+        <div class="right-col column">
+            <div class="box">
+                <div>
+                    <h2>Trends for you</h2>
+                    <button class="configBtn"></button>
+                </div>
+                <div class="trendingTopicitem">
+                    <p class="trending-desc">Trending in United States</p>
+                    <a href="#" class="trendingTopicitem">
+                        <span class="trendingTopicName">Elon Musk</span>
+                        <span class="trendingTopicOptions">icon</span>
+                        <span class="trendingTopicNumber"></span>
+                    </a>
+                </div>
+                <div class="trendingTopicitem">
+                    <p class="trending-desc">Trending in United States</p>
+                    <a href="#" class="trendingTopicitem">
+                        <span class="trendingTopicName">Elon Musk</span>
+                        <span class="trendingTopicOptions">icon</span>
+                        <span class="trendingTopicNumber"></span>
+                    </a>
+                </div>
+                <div class="trendingTopicitem">
+                    <p class="trending-desc">Trending in United States</p>
+                    <a href="#" class="trendingTopicitem">
+                        <span class="trendingTopicName">Elon Musk</span>
+                        <span class="trendingTopicOptions">icon</span>
+                        <span class="trendingTopicNumber"></span>
+                    </a>
+                </div>
+                <a href="#" class="showMore">Show more</a>
+            </div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
