@@ -42,6 +42,8 @@ body {
     background: var(--dark-blue);
     border-radius: 21px;
     width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 .column {
     display: flex;
@@ -67,7 +69,7 @@ input {
     color:var(--white);
     font-weight: 400;
     font-size: 23px;
-    padding-left: 20px;
+    /*padding-left: 20px;*/
 }
 
 .buscar::placeholder {
@@ -307,7 +309,7 @@ a.show-profile {
     margin-left: 60px;
 }
 
-.userCont .user {
+.user {
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
@@ -315,7 +317,7 @@ a.show-profile {
     color: var(--ligth-grey);
 }
 
-.userCont .userName {
+.userName {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -332,11 +334,18 @@ a.show-profile {
 }
 
 input.inputNewTweet {
-    width: 80%;
+    width: 100%;
 }
 
 .newPost.box {
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newPost .avatar, .post.box .avatar{
+    width: 62px;
+    height: 62px;
 }
 
 button.btnNewTweet, button.btnReaction {
@@ -350,6 +359,12 @@ button.btnNewTweet, button.btnReaction {
     color: var(--white);
 }
 
+.post.box {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
 .btnNewTweet {
     display: flex;
     align-items: center;
@@ -359,10 +374,26 @@ button.btnNewTweet, button.btnReaction {
 
 .postType {
     display: flex;
-    justify-content: space-evenly;
-    padding: 0px 0 0 31px;
+    justify-content: space-between;
 }
 
-.btnReaction{
+.inputYtypeCont{
+    width: 86%;
+}
 
+.inputContainer {
+    margin-bottom: 20px;
+}
+
+.contTweet {
+    width: 100%;
+}
+
+.contentTweet {
+    font-family: SF Pro Display;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
 }
