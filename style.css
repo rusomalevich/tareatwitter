@@ -2,13 +2,13 @@
     --white:#fff;
     --blue-tw:#1090F2;
     --dark-grey: #080E24;
-    --ligth-grey: #888888;
+    --light-grey: #888888;
     --ligther-grey: #DDDDDD;
     --dark-blue :rgba(127, 202, 255, 0.08);
-
 }
 
 a {text-decoration: none;}
+p {margin: 0;}
 
 body {
     background:var(--dark-grey);
@@ -191,7 +191,7 @@ a.active > i {
 }
 
 .profile-link {
-    color: var(--ligth-grey);
+    color: var(--light-grey);
     font-size: 17px;
 }
 
@@ -220,7 +220,7 @@ a.active > i {
 }
 
 .description-follows{
-    color:var(--ligth-grey);
+    color:var(--light-grey);
         font-size: 17px;
 }
 
@@ -314,7 +314,7 @@ a.show-profile {
     font-size: 15px;
     line-height: 18px;
     padding: 4px 0;
-    color: var(--ligth-grey);
+    color: var(--light-grey);
 }
 
 .userName {
@@ -387,6 +387,15 @@ button.btnNewTweet, button.btnReaction {
 
 .contTweet {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contUserTweet{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .contentTweet {
@@ -396,4 +405,75 @@ button.btnNewTweet, button.btnReaction {
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
+}
+
+.formularioUsuario {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    gap: 2vh;
+    margin: 0 auto;
+    margin-top: 20vh;
+}
+
+.formularioUsuario label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.formularioUsuario input {
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+}
+
+.postReaction {
+    display: flex;
+    gap: 15px;
+}
+
+button.btnReaction {
+    display: flex;
+    gap: 10px;
+}
+
+.metaTweet {
+    display: flex;
+    gap: 10px;
+    color: var(--light-grey);
+    font-size: 12px;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    gap: 5px;
+}
+
+.icons i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    background-position: center;
+}
+
+i.likeIcon {
+    background-color: #4DEB33;
+    background-image: url(img/akar-icons_heart.png);
+}
+
+i.rtIcon {
+    background-color: #DF4343;
+    background-image: url(img/vector.png);
+}
+
+i.commentIcon {
+    background-color: #55ACEE;
+    background-image: url(img/fa-regular_comment-dots.png);
+}
+
+span.timePost {
+    width: 100%;
 }
